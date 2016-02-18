@@ -21,3 +21,10 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
+
+class test(models.Model):
+    """docstring for test"""
+    def __init__(self, arg):
+        super(test, self).__init__()
+        self.arg = arg
+        
